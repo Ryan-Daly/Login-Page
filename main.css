@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 h1 {
     font-weight: bold;
     margin: 0;
@@ -86,11 +90,15 @@ input {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    position: relative;
     overflow: hidden;
+    margin: auto;
+    position: relative;
     width: 768px;
     max-width: 100%;
     min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-container {
@@ -187,18 +195,18 @@ input {
 }
 
 .overlay-left {
-    transform: translateX(-10%);
+    transform: translateX(0%);
 }
 
 .container.right-panel-active .overlay-left {
-    transform: translateX(-10%);
+    transform: translateX(0%);
 }
 
 .overlay-right {
     right: 0;
-    transform: translateX(10%);
+    transform: translateX(0%);
 }
 
 .container.right-panel-active .overlay-right {
-    transform: translateX(10%);
+    transform: translateX(0%);
 }
